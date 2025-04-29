@@ -5,8 +5,7 @@ Flavour Hunt is a responsive and modern **Recipe Finder Web App** built with Rea
 ---
 
 ## 🌐 Live Demo
-
-> _Add your deployed URL here_  
+ 
 > Example: https://flavour-hunt.vercel.app
 
 ---
