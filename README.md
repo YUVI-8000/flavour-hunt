@@ -1,8 +1,3 @@
-Great! Here's your updated **README.md** template with your correct LinkedIn URL:
-
----
-
-```markdown
 # 🥘 Flavour Hunt – Recipe Finder App
 
 Flavour Hunt is a responsive and modern **Recipe Finder Web App** built with React. Users can search for recipes using keywords and get instant results with ingredients, calorie counts, and more—thanks to the **Edamam Recipe API**.
