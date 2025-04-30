@@ -102,12 +102,6 @@ The app will open at `http://localhost:3000`
 
 ---
 
-## 📸 Screenshots
-
-> _You can upload screenshots here to showcase UI_
-
----
-
 ## 📌 Future Enhancements
 
 - Add favorites/bookmark feature
