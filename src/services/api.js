@@ -1,23 +1,34 @@
-
 import axios from 'axios';
-import { API_URL } from '../constants/constant';
+import { API_KEY, API_URL } from '../constants/constant';
 
+// Search Recipes
 export const getRecipes = async (searchedQuery) => {
     try {
-        let response = await axios.get(`${API_URL}/search?q=${searchedQuery}`);
+        const response = await axios.get(`${API_URL}/complexSearch`, {
+            params: {
+                query: searchedQuery,
+                number: 20,
+                apiKey: API_KEY,
+            }
+        });
         return response.data;
     } catch (error) {
-        console.log('Error while calling the api ', error.message);
-        return error.response
+        console.log('Error while calling the API:', error.message);
+        return { error: error.message };
     }
-}
+};
 
-export const getRecipe = async (searchedQuery) => {
+// Get Recipe Details
+export const getRecipe = async (id) => {
     try {
-        let response = await axios.get(`${API_URL}/get?rId=${searchedQuery}`);
+        const response = await axios.get(`${API_URL}/${id}/information`, {
+            params: {
+                apiKey: API_KEY
+            }
+        });
         return response.data;
     } catch (error) {
-        console.log('Error while calling the api ', error.message);
-        return error.response
+        console.log('Error while calling the API:', error.message);
+        return { error: error.message };
     }
-}
+};
